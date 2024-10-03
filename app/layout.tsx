@@ -1,6 +1,6 @@
 import Navbar from '@/components/Navbar';
 import './globals.css';
-
+import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'My App',
@@ -14,7 +14,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <Navbar /> {/* Navbar at the top */}
         <main>{children}</main> {/* All page content will go here */}
-        
+        <Footer />
       </body>
     </html>
   );

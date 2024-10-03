@@ -1,7 +1,7 @@
 "use client"; // This makes the component a client component
 
 import React, { useEffect } from 'react';
-import { gsap } from 'gsap';
+
 import Link from "next/link"
 const Hero = () => {
   useEffect(() => {
@@ -28,7 +28,7 @@ const Hero = () => {
 
 
         <div className='flex justify-center space-x-4'>
-          <button className='bg-yellow-500 text-black font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition'>Order Now</button>
+        <Link href="/order"> <button className='bg-yellow-500 text-black font-bold py-2 px-4 rounded-lg hover:bg-yellow-600 transition'>Order Now</button></Link>
          <Link href="#product"> <button className='bg-transparent border-2 border-yellow-500 text-yellow-500 font-bold py-2 px-4 rounded-lg hover:bg-yellow-500 hover:text-black transition'>Learn More</button></Link>
         </div>
       </div>

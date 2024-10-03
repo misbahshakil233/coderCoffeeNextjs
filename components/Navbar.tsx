@@ -37,7 +37,7 @@ const styles = {
 
 const Navbar = () => {
   return (
-    <main className='flex justify-between items-center mx-auto px-4 bg-black text-white shadow-xl z-50'>
+    <main className='  flex justify-between items-center mx-auto px-4 bg-black text-white shadow-xl z-50'>
       <div>
         <style>{styles.animation}</style> {/* Include CSS for animation */}
         <h1 className='text-4xl font-bold uppercase'>
