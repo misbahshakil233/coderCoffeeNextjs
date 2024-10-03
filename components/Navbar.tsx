@@ -20,12 +20,24 @@ const styles = {
       display: inline-block; /* Make each word inline block */
       animation: colorChange 2s infinite alternate; /* Animation settings */
     }
+
+    /* Additional styles to remove underline and bullets */
+    .nav-link {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Maintain color from parent */
+    }
+
+    .no-bullets {
+      list-style-type: none; /* Remove bullet points */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
   `,
 };
 
 const Navbar = () => {
   return (
-    <main className='fixed top-0 left-0 right-0 flex justify-between items-center mx-auto px-4 bg-black text-white shadow-xl z-50'>
+    <main className='flex justify-between items-center mx-auto px-4 bg-black text-white shadow-xl z-50'>
       <div>
         <style>{styles.animation}</style> {/* Include CSS for animation */}
         <h1 className='text-4xl font-bold uppercase'>
@@ -35,18 +47,18 @@ const Navbar = () => {
       </div>
 
       <nav>
-        <ul className="flex justify-evenly items-center gap-8 p-4 font-bold text-xl">
+        <ul className="flex items-center gap-8 p-4 font-bold text-xl no-bullets">
           <li>
-            <Link href="/#home" className="hover:text-yellow-500 transition-colors duration-300">Home</Link>
+            <Link href="/#home" className="nav-link hover:text-yellow-500 transition-colors duration-300">Home</Link>
           </li>
           <li>
-            <Link href="/#about" className="hover:text-yellow-500 transition-colors duration-300">About</Link>
+            <Link href="/#about" className="nav-link hover:text-yellow-500 transition-colors duration-300">About</Link>
           </li>
           <li>
-            <Link href="/#product" className="hover:text-yellow-500 transition-colors duration-300">Product</Link>
+            <Link href="/#product" className="nav-link hover:text-yellow-500 transition-colors duration-300">Product</Link>
           </li>
           <li>
-            <Link href="/#contact" className="hover:text-yellow-500 transition-colors duration-300">Contact</Link>
+            <Link href="/#contact" className="nav-link hover:text-yellow-500 transition-colors duration-300">Contact</Link>
           </li>
         </ul>
       </nav>

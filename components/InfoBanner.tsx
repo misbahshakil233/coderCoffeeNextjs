@@ -18,10 +18,10 @@ const InfoBanner = () => {
         </div>
         
         {/* Cards Section - Displaying 5 Cards in One Row */}
-        <div className="flex justify-evenly w-full">
+        <div className="flex flex-wrap justify-center w-full space-x-4">
           
           {/* Employee Card */}
-          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 w-1/5">
+          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 m-2 w-48 sm:w-60 lg:w-1/5">
             <div className="flex justify-center mb-4 text-yellow-500">
               <FaUsers className="text-4xl" />
             </div>
@@ -32,7 +32,7 @@ const InfoBanner = () => {
           </div>
           
           {/* Branches Card */}
-          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 w-1/5">
+          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 m-2 w-48 sm:w-60 lg:w-1/5">
             <div className="flex justify-center mb-4 text-yellow-500">
               <FaStoreAlt className="text-4xl" />
             </div>
@@ -43,7 +43,7 @@ const InfoBanner = () => {
           </div>
           
           {/* Year Established Card */}
-          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 w-1/5">
+          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 m-2 w-48 sm:w-60 lg:w-1/5">
             <div className="flex justify-center mb-4 text-yellow-500">
               <FaCalendarAlt className="text-4xl" />
             </div>
@@ -54,7 +54,7 @@ const InfoBanner = () => {
           </div>
 
           {/* Coffee Varieties Card */}
-          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 w-1/5">
+          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 m-2 w-48 sm:w-60 lg:w-1/5">
             <div className="flex justify-center mb-4 text-yellow-500">
               <FaMugHot className="text-4xl" />
             </div>
@@ -63,9 +63,9 @@ const InfoBanner = () => {
             </h3>
             <p className="text-xl font-semibold">Coffee Varieties</p>
           </div>
-          
+
           {/* Awards Won Card */}
-          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 w-1/5">
+          <div className="bg-white text-black rounded-lg shadow-lg p-6 text-center hover:scale-105 transform transition-all duration-300 hover:shadow-2xl hover:bg-yellow-400 m-2 w-48 sm:w-60 lg:w-1/5">
             <div className="flex justify-center mb-4 text-yellow-500">
               <FaTrophy className="text-4xl" />
             </div>
@@ -79,7 +79,15 @@ const InfoBanner = () => {
         
         {/* CTA Button */}
         <div className="mt-12">
-          <a href="#services" className="px-8 py-4 bg-yellow-500 text-black text-xl font-bold rounded-full hover:bg-yellow-600 transition-all duration-300 shadow-md">
+          <a 
+            href="#services" 
+            className="inline-block px-8 py-4 bg-yellow-500 text-black text-xl font-bold rounded-full 
+                       hover:bg-yellow-600 transition-all duration-300 shadow-md 
+                       focus:outline-none focus:ring-4 focus:ring-yellow-400"
+            style={{
+              textDecoration: 'none' // Remove underline on hover
+            }}
+          >
             Discover Our Services
           </a>
         </div>
