@@ -27,9 +27,11 @@ const Service = () => {
       <div className="flex flex-col md:flex-row items-center justify-between mb-20">
         {/* Text Column */}
         <div className="flex-1 md:pr-10 mb-10 md:mb-0">
-          <h1 className="text-4xl font-bold mb-4">Our Coffee Services</h1>
+          <h1 className="text-4xl font-bold mb-4 animate-bounce">Our Coffee Services</h1>
           <p className="text-lg text-gray-700">
             Discover the art of coffee making with our expert services. We offer a variety of coffee blends, brewing methods, and workshops to help you master your coffee experience. Join us to explore the rich flavors and aromas of our carefully selected coffee beans.
+            Discover the art of coffee making with our expert services. We offer a variety of coffee blends, brewing methods, and workshops to help you master your coffee experience. Join us to explore the rich flavors and aromas of our carefully selected coffee beans.
+        
           </p>
         </div>
 

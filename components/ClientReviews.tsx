@@ -25,7 +25,7 @@ const ClientReviews = () => {
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Column: Client Reviews */}
         <div className="flex-1 md:pr-10 mb-10 md:mb-0">
-          <h1 className="text-4xl font-bold mb-6 text-center">What Our Clients Say</h1>
+          <h1 className="text-4xl font-bold mb-6 text-center animate-bounce">What Our Clients Say</h1>
           <div className="space-y-8">
             {reviews.map((review, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
@@ -47,9 +47,9 @@ const ClientReviews = () => {
         {/* Right Column: Related Image */}
         <div className="flex-1">
           <img
-            src="https://images.unsplash.com/photo-1515992062044-60c67f2a6335?crop=entropy&fit=crop&w=500&q=60"
+            src="https://verse.io/wp-content/uploads/2019/06/4-Ways-to-Generate-Incredible-Client-Reviews-scaled.jpg"
             alt="Client Reviews"
-            className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+            className="w-full h-[400px] object-cover rounded-lg shadow-lg animate-pulse"
           />
         </div>
       </div>

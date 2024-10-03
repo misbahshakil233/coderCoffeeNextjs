@@ -6,7 +6,7 @@ const Product = () => {
   return (
     <div>
       <section id="product" className="min-h-screen py-20 px-10 bg-gray-100">
-        <h1 className="text-4xl font-bold text-center text-gray-800 mb-28">
+        <h1 className="text-4xl font-bold text-center animate-bounce text-gray-800 mb-28">
           Our Products
         </h1>
 

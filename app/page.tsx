@@ -1,4 +1,6 @@
 import About from "@/components/About";
+import ClientReviews from "@/components/ClientReviews";
+import CoffeeSlider from "@/components/CoffeeSlider";
 import DiscountOffer from "@/components/DiscountOffer";
 
 import Hero from "@/components/Hero";
@@ -14,8 +16,10 @@ export default function Home() {
     <Hero />
     <InfoBanner />
     <About />
+    <CoffeeSlider />
     <Product />
     <DiscountOffer />
+    <ClientReviews />
     <Service />
     
         </div>
