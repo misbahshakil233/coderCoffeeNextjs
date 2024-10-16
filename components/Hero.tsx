@@ -4,12 +4,7 @@ import React, { useEffect } from 'react';
 
 import Link from "next/link"
 const Hero = () => {
-  useEffect(() => {
-    const letters = document.querySelectorAll('.animated-letter');
-    letters.forEach((letter, index) => {
-      letter.style.animationDelay = `${index * 0.1}s`; // Delay each letter animation
-    });
-  }, []);
+  
 
   const text = "Delicious Coffee"; // Text you want to animate
 
@@ -36,7 +31,8 @@ const Hero = () => {
       {/* Right Column for Image */}
       <div className='relative w-1/2'>
         <img 
-          src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b06381158904485.63942bec3b198.png" 
+      
+       src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b06381158904485.63942bec3b198.png" 
           alt="Delicious Coffee" 
           className=" right-0 bg-black coffee-image w-3/4 " 
         />
