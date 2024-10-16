@@ -17,7 +17,7 @@ const OrderSuccessPage = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 p-6">
       <h1 className="text-4xl font-bold text-yellow-600 mb-6">Order Successful!</h1>
       
-      <div style={styles.popper} className="mb-4">🎉</div> {/* Party popper emoji */}
+      <div style={styles.popper} className="mb-4 animate-bounce">🎉</div> {/* Party popper emoji */}
       
       <p className="text-lg text-gray-600 mb-4">Thank you for your order.</p>
       <p className="text-lg text-gray-600">Your order has been placed successfully!</p>

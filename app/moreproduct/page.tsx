@@ -4,6 +4,8 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'; // Use 'next/navigation' for the app directory
 import Link from 'next/link';
+import Image from 'next/image'; // Import Next.js Image component
+
 interface CoffeeProduct {
   id: number;
   title: string;
@@ -44,9 +46,11 @@ const MoreProducts = () => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {products.map((product) => (
           <div key={product.id} className="relative bg-white p-8 rounded-lg shadow-lg text-center transition-transform duration-300 hover:scale-105">
-            <img
+            <Image
               src={product.image} // Use the image from the product data
               alt={product.title} // Changed to 'title' for alt text
+              width={160} // Specify width for optimization
+              height={160} // Specify height for optimization
               className="w-40 h-40 rounded-lg mx-auto mb-4"
             />
             <h2 className="text-xl font-bold text-gray-800">{product.title}</h2>
@@ -55,12 +59,12 @@ const MoreProducts = () => {
               ${product.price ? product.price.toFixed(2) : 'N/A'} {/* Use optional chaining or a fallback */}
             </p>
             <Link href="/order">
-            <button
-              onClick={() => handleOrderNow(product.id)} // Call handleOrderNow with the product ID
-              className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
-            >
-              Order Now
-            </button>
+              <button
+                onClick={() => handleOrderNow(product.id)} // Call handleOrderNow with the product ID
+                className="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 transition"
+              >
+                Order Now
+              </button>
             </Link>
           </div>
         ))}

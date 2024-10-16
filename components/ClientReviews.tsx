@@ -21,7 +21,7 @@ const ClientReviews = () => {
   ];
 
   return (
-    <section className="py-20 px-10 bg-gray-50" id="reviews">
+    <section className="py-20 px-10 bg-black" id="reviews">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Left Column: Client Reviews */}
         <div className="flex-1 md:pr-10 mb-10 md:mb-0">
