@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from 'react';
+import Image from "next/image";
+import React, { useState } from "react";
 
 const Service = () => {
   // State to manage the selected coffee image
@@ -10,15 +11,15 @@ const Service = () => {
   const images = [
     {
       src: "https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&fit=crop&w=500&q=60",
-      alt: "Coffee 1"
+      alt: "Coffee 1",
     },
     {
       src: "https://th.bing.com/th/id/OIP.k2aR4k0xHwlAWvzcf1jgBQHaEJ?w=960&h=538&rs=1&pid=ImgDetMain",
-      alt: "Coffee 2"
+      alt: "Coffee 2",
     },
     {
       src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&fit=crop&w=500&q=60",
-      alt: "Coffee 3"
+      alt: "Coffee 3",
     },
   ];
 
@@ -30,17 +31,17 @@ const Service = () => {
           <h1 className="text-4xl font-bold mb-4 animate-bounce">Our Coffee Services</h1>
           <p className="text-lg text-gray-700">
             Discover the art of coffee making with our expert services. We offer a variety of coffee blends, brewing methods, and workshops to help you master your coffee experience. Join us to explore the rich flavors and aromas of our carefully selected coffee beans.
-            Discover the art of coffee making with our expert services. We offer a variety of coffee blends, brewing methods, and workshops to help you master your coffee experience. Join us to explore the rich flavors and aromas of our carefully selected coffee beans.
-        
           </p>
         </div>
 
         {/* Image Column */}
         <div className="flex-1">
-          <img
+          <Image
             src={selectedImage}
             alt="Coffee Selection"
-            className="w-full h-[400px] object-cover rounded-lg shadow-lg"
+            width={200} // Set width to a more appropriate value
+            height={200} // Set height to a more appropriate value
+            className="w-full h-auto object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>
@@ -53,7 +54,9 @@ const Service = () => {
             onClick={() => setSelectedImage(image.src)} // Update selected image on click
             className="cursor-pointer"
           >
-            <img
+            <Image
+              width={150} // Adjust size of thumbnails
+              height={100} // Adjust size of thumbnails
               src={image.src}
               alt={image.alt}
               className="w-48 h-40 rounded-lg border-2 border-transparent hover:border-yellow-500 transition"

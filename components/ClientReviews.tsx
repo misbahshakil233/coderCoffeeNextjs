@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-
+import Image from 'next/image';
 const ClientReviews = () => {
   const reviews = [
     {
@@ -46,7 +46,9 @@ const ClientReviews = () => {
 
         {/* Right Column: Related Image */}
         <div className="flex-1">
-          <img
+          <Image
+          width={300}
+          height={300}
             src="https://verse.io/wp-content/uploads/2019/06/4-Ways-to-Generate-Incredible-Client-Reviews-scaled.jpg"
             alt="Client Reviews"
             className="w-full h-[400px] object-cover rounded-lg shadow-lg animate-pulse"

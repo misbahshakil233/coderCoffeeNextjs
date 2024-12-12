@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 // List of coffee-related images for the slider
 const coffeeImages = [
   'https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
@@ -36,7 +36,9 @@ const CoffeeSlider = () => {
               key={index}
               className="min-w-full h-80 flex-shrink-0"
             >
-              <img
+              <Image
+               width={500}
+               height={1000}
                 src={image}
                 alt={`Coffee ${index + 1}`}
                 className="w-full h-full object-cover"

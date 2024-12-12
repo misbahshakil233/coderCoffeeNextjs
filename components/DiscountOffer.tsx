@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Image from 'next/image';
 const DiscountOffer = () => {
   return (
     <section className="relative min-h-[500px] flex items-center justify-center bg-black text-white py-16">
@@ -24,7 +24,9 @@ const DiscountOffer = () => {
 
         {/* Right Side for Image */}
         <div className="flex-1 flex justify-center md:pl-10">
-          <img 
+          <Image 
+           width={100}
+           height={100}
             src="https://img.freepik.com/premium-photo/coffee-mug-bursting-coffee-beans-flying-ai-generated-background_173031-1032.jpg" 
             alt="Discount Coffee" 
             className="w-3/5 h-auto rounded-lg shadow-2xl transition-transform transform hover:scale-105" 

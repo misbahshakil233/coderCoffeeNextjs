@@ -1,12 +1,12 @@
 "use client"; // This makes the component a client component
+import Image from 'next/image';
 
-import React, { useEffect } from 'react';
 
 import Link from "next/link"
 const Hero = () => {
   
 
-  const text = "Delicious Coffee"; // Text you want to animate
+  
 
 
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
           Delicious Coffee
         </h1>
 <p className='text-xl text-center max-w-[60ch] mx-auto'>
-  Savor the rich aroma and bold flavor of premium coffee, expertly roasted to perfection. At Coders Coffee, every sip is a moment of pure indulgence. Whether you're starting your morning or enjoying a relaxing break, our coffee is crafted for those who appreciate excellence in every cup. <br/><br/>
+  Savor the rich aroma and bold flavor of premium coffee, expertly roasted to perfection. At Coders Coffee, every sip is a moment of pure indulgence. Whether youre starting your morning or enjoying a relaxing break, our coffee is crafted for those who appreciate excellence in every cup. <br/><br/>
  </p>
 
 
@@ -30,8 +30,9 @@ const Hero = () => {
 
       {/* Right Column for Image */}
       <div className='relative w-1/2'>
-        <img 
-      
+        <Image
+      width={300}
+      height={300}
        src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b06381158904485.63942bec3b198.png" 
           alt="Delicious Coffee" 
           className=" right-0 bg-black coffee-image w-3/4 " 
