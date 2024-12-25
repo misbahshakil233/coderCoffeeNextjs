@@ -14,7 +14,7 @@ const Service = () => {
       alt: "Coffee 1",
     },
     {
-      src: "https://th.bing.com/th/id/OIP.k2aR4k0xHwlAWvzcf1jgBQHaEJ?w=960&h=538&rs=1&pid=ImgDetMain",
+      src: "https://thumbs.dreamstime.com/b/vertical-grayscale-coffee-beans-scattered-white-surface-268442925.jpg",
       alt: "Coffee 2",
     },
     {
@@ -35,13 +35,13 @@ const Service = () => {
         </div>
 
         {/* Image Column */}
-        <div className="flex-1">
+        <div className="flex-1 gap-40">
           <Image
             src={selectedImage}
             alt="Coffee Selection"
-            width={200} // Set width to a more appropriate value
-            height={200} // Set height to a more appropriate value
-            className="w-full h-auto object-cover rounded-lg shadow-lg"
+            width={400} // Set width to a more appropriate value
+            height={50} // Set height to a more appropriate value
+            className="  object-cover rounded-lg shadow-lg"
           />
         </div>
       </div>
