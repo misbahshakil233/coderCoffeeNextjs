@@ -16,7 +16,7 @@ const Hero = () => {
         <p className="text-sm md:text-xl max-w-[60ch] mx-auto md:mx-0">
           Savor the rich aroma and bold flavor of premium coffee, expertly
           roasted to perfection. At Coders Coffee, every sip is a moment of pure
-          indulgence. Whether you're starting your morning or enjoying a
+          indulgence. Whether youre starting your morning or enjoying a
           relaxing break, our coffee is crafted for those who appreciate
           excellence in every cup. <br />
           <br />
